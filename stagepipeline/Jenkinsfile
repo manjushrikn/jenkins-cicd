@@ -21,7 +21,7 @@ pipeline {
         NEXUS_LOGIN = 'nexuslogin'
         registryCredential = 'ecr:us-east-1:awscreds'
         appRegistry = '136162657788.dkr.ecr.us-east-1.amazonaws.com/vprofile-appimage'
-        vprofileRegistry = '136162657788.dkr.ecr.us-east-1.amazonaws.com'
+        vprofileRegistry = 'https://136162657788.dkr.ecr.us-east-1.amazonaws.com'
     }
 
     stages {
