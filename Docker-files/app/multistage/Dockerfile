@@ -1,6 +1,6 @@
 FROM maven:3.9.9-eclipse-temurin-21-jammy AS BUILD_IMAGE
 RUN git clone https://github.com/manjushrikn/jenkins-cicd.git
-RUN cd jenkins-cicd && git checkout docker && mvn install
+RUN cd jenkins-cicd && git checkout jenkins && mvn install
 
 FROM tomcat:10-jdk21
 
